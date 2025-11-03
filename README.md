@@ -4,7 +4,10 @@
 Скрипт читает CSV-файлы с рейтингами товаров и формирует отчёт `average-rating` — средний рейтинг бренда.
 
 ## Пример запуска
-python3 main.py --files products/products1.csv products/produts2.csv --report average-rating
+python3 main.py --files products/products1.csv products/products2.csv --report average-rating
 
 ## Как добавить новый отчёт
 Создайте файл в папке `reports/` и зарегистрируйте его в словаре `reports` в `main.py`.
+
+## Тесты
+pytest tests/test_average_rating.py
